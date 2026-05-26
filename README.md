@@ -1,0 +1,1 @@
+## PulseX Agency est la division talent et représentation de créateurs de contenu du groupe Play To Sky. Elle accompagne quatre types de profils : Talent, Creator, Artist et Celebrity. Le site vise à attirer et informer les candidats souhaitant être représentés par l'agence.
