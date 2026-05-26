@@ -1,65 +1,92 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
+  const cities = ["Paris", "New York", "London", "Miami", "Dubaï", "Milan", "Madrid", "Los Angeles"];
+  const profiles = ["Talent", "Creators", "Artists", "Celebrity"];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="w-full flex flex-col items-center">
+
+      {/* SECTION 1 : HERO SECTION */}
+      <section className="w-full text-center pt-12 pb-20 px-4 max-w-5xl mx-auto z-10">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-none uppercase max-w-4xl mx-auto">
+          Creator & Influencer
+          <span className="block text-pulse-pink md:text-right mt-2">
+            Management
+          </span>
+          <span className="block text-pulse-pink md:text-right">
+            Agency
+          </span>
+        </h1>
+
+        {/* Flèche d'indication de scroll */}
+        <div className="mt-16 flex flex-col items-center gap-1 text-white/60 text-[10px] tracking-widest uppercase font-light">
+          <span>Select a city</span>
+          <span className="animate-bounce text-xs mt-1">↓</span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* SECTION 2 : CITIES HUB (CORRIGÉE) */}
+      <section className="w-full bg-white text-black py-20 px-6 relative min-h-150 flex items-center justify-center overflow-hidden">
+        <div className="w-full max-w-5xl mx-auto relative flex items-center justify-between">
+
+          {/* 1. Liste des villes alignées à GAUCHE */}
+          <div className="flex flex-col gap-3 z-10 w-1/3 text-left">
+            {cities.map((city) => (
+              <div key={city} className="group cursor-pointer">
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink">
+                  {city}
+                </h2>
+              </div>
+            ))}
+          </div>
+
+          {/* 2. LE LOGO ROND CENTRAL (Absolu et parfaitement centré au milieu de la ligne) */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-pulse-pink flex flex-col items-center justify-center p-8 text-white text-center shadow-lg relative">
+              <Image
+                src="/Logo-Pulse-X-agency-bg.png" // Utilisation du logo transparent reçu
+                alt="PulseX Logo Transparent"
+                width={220}
+                height={100}
+                priority
+                className="w-auto h-auto object-contain"
+              />
+            </div>
+          </div>
+
+          {/* 3. Effet miroir des villes alignées à DROITE */}
+          <div className="flex flex-col gap-3 z-10 w-1/3 text-right">
+            {cities.map((city) => (
+              <div key={`${city}-mirror`}>
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-wide uppercase text-gray-200/60 select-none">
+                  {city}
+                </h2>
+              </div>
+            ))}
+          </div>
+
         </div>
-      </main>
+      </section>
+
+      {/* SECTION 3 : 4 CARDS PROFILS */}
+      <section className="w-full bg-linear-to-b from-white via-pulse-mid to-pulse-burgundy py-24 px-4">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {profiles.map((profile) => (
+            <Link
+              key={profile}
+              href="/careers" // Redirection directe vers la page Coming Soon
+              className="border-2 border-white bg-transparent aspect-4/3 sm:aspect-square flex items-center justify-center p-6 cursor-pointer group hover:bg-white/10 transition-all duration-300"
+            >
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest uppercase text-white transition-transform duration-300 group-hover:scale-105">
+                {profile}
+              </h3>
+            </Link>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }
