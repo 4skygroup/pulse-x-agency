@@ -2,19 +2,23 @@ import Link from "next/link";
 
 export default function Careers() {
     return (
-        <div className="flex-1 flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
-            {/* Grand titre "Coming soon..." fidèle à la maquette */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-pulse-pink tracking-wide animate-pulse">
+        <div className="flex-1 flex flex-col items-center justify-center min-h-[65vh] px-4 text-center bg-linear-to-b from-pulse-pink via-white to-white text-black">
+
+            {/* Grand titre "Coming soon..." */}
+            <h1 className="text-5xl sm:text-7xl font-bold text-pulse-pink tracking-wide uppercase drop-shadow-sm">
                 Coming soon...
             </h1>
-            <Link
-                href="/" // Redirection directe vers la page Home
-                className="border-2 border-white bg-transparent aspect-4/3 sm:aspect-square flex items-center justify-center p-6 cursor-pointer group hover:bg-white/10 transition-all duration-300"
-            >
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest uppercase text-white transition-transform duration-300 group-hover:scale-105">
+
+            {/* Bouton de retour épuré et proportionné */}
+            <div className="mt-10">
+                <Link
+                    href="/"
+                    className="inline-block border-2 border-pulse-pink text-pulse-pink font-bold tracking-widest uppercase text-xs sm:text-sm px-8 py-3 rounded-full hover:bg-pulse-pink hover:text-white transition-all duration-300 shadow-sm"
+                >
                     Back to Home
-                </h3>
-            </Link>
+                </Link>
+            </div>
+
         </div>
     );
 }
