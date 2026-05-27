@@ -20,7 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       {/* Fond en dégradé rose vers blanc comme sur les maquettes */}
-      <body className={`${glacialIndifference.className} bg-linear-to-b from-pulse-pink via-white to-white text-black min-h-screen flex flex-col antialiased`}>        <Header />
+      <body className={`${glacialIndifference.className} bg-linear-to-b from-pulse-pink via-white to-white text-black min-h-screen flex flex-col antialiased`}>
+        <Header />
         <main className="grow flex flex-col w-full">
           {children}
         </main>

@@ -17,7 +17,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="flex justify-between items-center px-6 md:px-12 py-6 w-full mx-auto relative z-100">
+        <header className="flex justify-between items-center px-6 md:px-12 py-2 w-full mx-auto relative z-100">
             {/* LOGO ENVELOPPÉ DANS UN LINK */}
             <div className="shrink-0">
                 <Link href="/">
