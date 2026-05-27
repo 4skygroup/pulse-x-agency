@@ -9,22 +9,29 @@ export default function Home() {
     <div className="w-full flex flex-col items-center">
 
       {/* SECTION 1 : HERO SECTION */}
-      <section className="w-full text-center pt-12 pb-20 px-4 max-w-5xl mx-auto z-10">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-none uppercase max-w-4xl mx-auto">
-          Creator & Influencer
-          <span className="block text-pulse-pink md:text-right mt-2">
-            Management
-          </span>
-          <span className="block text-pulse-pink md:text-right">
-            Agency
-          </span>
-        </h1>
+      <section className="w-full min-h-[calc(100vh-160px)] flex flex-col justify-between items-center text-center px-4 max-w-5xl mx-auto z-10">
 
-        {/* Flèche d'indication de scroll */}
-        <div className="mt-16 flex flex-col items-center gap-1 text-white/60 text-[10px] tracking-widest uppercase font-light">
+        <div className="flex-1"></div>
+
+        {/* Titre principal bien centré au milieu de l'écran */}
+        <div className="flex-none w-full mt-4">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5rem] tracking-tight text-white leading-none uppercase w-full">
+            Creator & Influencer
+            <span className="block text-pulse-mid md:text-right mt-2 md:mt-4">
+              Management
+            </span>
+            <span className="block text-pulse-mid md:text-right">
+              Agency
+            </span>
+          </h1>
+        </div>
+
+        {/* Flèche d'indication de scroll collée tout en bas de la vue */}
+        <div className="flex-1 flex flex-col justify-end pb-12 items-center gap-1 text-white/80 text-[10px] tracking-widest uppercase font-light">
           <span>Select a city</span>
           <span className="animate-bounce text-xs mt-1">↓</span>
         </div>
+
       </section>
 
       {/* SECTION 2 : CITIES HUB (CORRIGÉE & ULTRA-RESPONSIVE) */}
@@ -46,7 +53,7 @@ export default function Home() {
           {/* Liste simple centrée pour le confort sur smartphone */}
           <div className="flex flex-col gap-3 text-center">
             {cities.map((city) => (
-              <h2 key={`${city}-mobile`} className="text-2xl font-bold tracking-wide uppercase">
+              <h2 key={`${city}-mobile`} className="text-2xl  tracking-wide uppercase">
                 {city}
               </h2>
             ))}
@@ -60,7 +67,7 @@ export default function Home() {
           <div className="flex flex-col gap-3 z-10 w-1/3 text-left">
             {cities.map((city) => (
               <div key={city} className="group cursor-pointer">
-                <h2 className="text-3xl sm:text-4xl font-bold tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink">
+                <h2 className="text-3xl sm:text-4xl  tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink">
                   {city}
                 </h2>
               </div>
@@ -84,7 +91,7 @@ export default function Home() {
           {/* 3. Villes miroirs à droite */}
           <div className="flex flex-col gap-3 z-10 w-1/3 text-right">
             {cities.map((city) => (
-              <h2 key={`${city}-mirror`} className="text-3xl sm:text-4xl font-bold tracking-wide uppercase text-gray-200/60 select-none">
+              <h2 key={`${city}-mirror`} className="text-3xl sm:text-4xl  tracking-wide uppercase text-gray-200/60 select-none">
                 {city}
               </h2>
             ))}
@@ -102,7 +109,7 @@ export default function Home() {
               href="/careers" // Redirection directe vers la page Coming Soon
               className="border-2 border-white bg-transparent aspect-4/3 sm:aspect-square flex items-center justify-center p-6 cursor-pointer group hover:bg-white/10 transition-all duration-300"
             >
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest uppercase text-white transition-transform duration-300 group-hover:scale-105">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl  tracking-widest uppercase text-white transition-transform duration-300 group-hover:scale-105">
                 {profile}
               </h3>
             </Link>
