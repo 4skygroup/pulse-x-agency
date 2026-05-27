@@ -27,11 +27,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 2 : CITIES HUB (CORRIGÉE) */}
-      <section className="w-full bg-white text-black py-20 px-6 relative min-h-150 flex items-center justify-center overflow-hidden">
-        <div className="w-full max-w-5xl mx-auto relative flex items-center justify-between">
+      {/* SECTION 2 : CITIES HUB (CORRIGÉE & ULTRA-RESPONSIVE) */}
+      <section className="w-full bg-white text-black py-16 md:py-24 px-6 relative overflow-hidden">
 
-          {/* 1. Liste des villes alignées à GAUCHE */}
+        {/* DISPOSITION MOBILE : Simple, propre et lisible (Masquée sur desktop) */}
+        <div className="flex flex-col items-center gap-8 md:hidden w-full max-w-sm mx-auto">
+          {/* Le logo repasse au-dessus de manière fluide */}
+          <div className="w-48 h-48 rounded-full bg-pulse-pink flex items-center justify-center p-6 text-white text-center shadow-md">
+            <Image
+              src="/Logo-Pulse-X-agency-bg.png"
+              alt="PulseX Logo"
+              width={140}
+              height={60}
+              priority
+              className="w-auto h-auto object-contain"
+            />
+          </div>
+          {/* Liste simple centrée pour le confort sur smartphone */}
+          <div className="flex flex-col gap-3 text-center">
+            {cities.map((city) => (
+              <h2 key={`${city}-mobile`} className="text-2xl font-bold tracking-wide uppercase">
+                {city}
+              </h2>
+            ))}
+          </div>
+        </div>
+
+        {/* DISPOSITION DESKTOP : Ta maquette d'origine (Masquée sur mobile) */}
+        <div className="hidden md:flex w-full max-w-5xl mx-auto relative items-center justify-between min-h-125">
+
+          {/* 1. Villes à gauche */}
           <div className="flex flex-col gap-3 z-10 w-1/3 text-left">
             {cities.map((city) => (
               <div key={city} className="group cursor-pointer">
@@ -42,12 +67,12 @@ export default function Home() {
             ))}
           </div>
 
-          {/* 2. LE LOGO ROND CENTRAL (Absolu et parfaitement centré au milieu de la ligne) */}
+          {/* 2. Logo flottant au centre parfait */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
-            <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-pulse-pink flex flex-col items-center justify-center p-8 text-white text-center shadow-lg relative">
+            <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
               <Image
-                src="/Logo-Pulse-X-agency-bg.png" // Utilisation du logo transparent reçu
-                alt="PulseX Logo Transparent"
+                src="/Logo-Pulse-X-agency-bg.png"
+                alt="PulseX Logo"
                 width={220}
                 height={100}
                 priority
@@ -56,14 +81,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 3. Effet miroir des villes alignées à DROITE */}
+          {/* 3. Villes miroirs à droite */}
           <div className="flex flex-col gap-3 z-10 w-1/3 text-right">
             {cities.map((city) => (
-              <div key={`${city}-mirror`}>
-                <h2 className="text-3xl sm:text-4xl font-bold tracking-wide uppercase text-gray-200/60 select-none">
-                  {city}
-                </h2>
-              </div>
+              <h2 key={`${city}-mirror`} className="text-3xl sm:text-4xl font-bold tracking-wide uppercase text-gray-200/60 select-none">
+                {city}
+              </h2>
             ))}
           </div>
 
