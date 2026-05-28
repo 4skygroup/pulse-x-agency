@@ -23,7 +23,7 @@ export default function Footer({
         </div>
 
         {/* GRILLE RESPONSIVE : 1 col (Mobile) -> 2 cols (Tablette) -> 4 cols (Desktop) */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-12 border-b border-white/20">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-12">
 
           <div className="flex flex-col gap-6 items-center sm:items-start">
             <h2 className="text-t3 font-bold uppercase tracking-wider">Politics</h2>
