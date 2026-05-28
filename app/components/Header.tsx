@@ -22,7 +22,7 @@ export default function Header() {
             <div className="shrink-0">
                 <Link href="/">
                     <Image
-                        src="/Logo-Pulse-x-management.png"
+                        src=""
                         alt="Logo Pulse X Management"
                         width={80} // Réduit pour le chargement natif
                         height={28}
