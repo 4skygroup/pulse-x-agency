@@ -35,7 +35,7 @@ export default function CitiesHub() {
                 <div className="flex flex-col gap-5 z-10 w-2/5 text-left">
                     {cities.map((city) => (
                         <div key={city} className="group cursor-pointer">
-                            <h2 className="text-4xl lg:text-[8rem] tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink leading-none">
+                            <h2 className="text-4xl lg:text-[4rem] tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink leading-none">
                                 {city}
                             </h2>
                         </div>
@@ -46,7 +46,7 @@ export default function CitiesHub() {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
                     <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
                         <Image
-                            src="/Logo-Pulse-x-agency-bg.png"
+                            src="/Logo-Pulse-x-agency-removebg.png"
                             alt="PulseX Logo"
                             width={220}
                             height={100}
@@ -59,7 +59,7 @@ export default function CitiesHub() {
                 {/* 3. Villes miroirs à droite */}
                 <div className="flex flex-col gap-5 z-10 w-2/5 text-right">
                     {cities.map((city) => (
-                        <h2 key={`${city}-mirror`} className="text-4xl lg:text-[8rem] tracking-wide uppercase text-gray-200/60 select-none leading-none">
+                        <h2 key={`${city}-mirror`} className="text-4xl lg:text-[4rem] tracking-wide uppercase text-gray-200/60 select-none leading-none">
                             {city}
                         </h2>
                     ))}

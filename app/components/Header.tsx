@@ -22,11 +22,11 @@ export default function Header() {
             <div className="shrink-0">
                 <Link href="/">
                     <Image
-                        src="/Logo-Pulse-x-agency-bg.png"
+                        src="/Logo-Pulse-x-agency-removebg.png"
                         alt="PulseX Agency Logo"
-                        width={110}
-                        height={35}
-                        className="object-contain w-auto h-auto cursor-pointer"
+                        width={80} // Réduit pour le chargement natif
+                        height={28}
+                        className="object-contain w-auto h-auto max-w-17.5 md:max-w-21.25 cursor-pointer"
                     />
                 </Link>
             </div>
@@ -40,10 +40,9 @@ export default function Header() {
                 ))}
             </nav>
 
-            {/* BOUTON BURGER */}
             <button
                 onClick={toggleMenu}
-                className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 z-110 focus:outline-none"
+                className="relative md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 z-110 focus:outline-none cursor-pointer"
                 aria-label="Toggle Menu"
             >
                 <span className={`h-0.5 w-full bg-white transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
