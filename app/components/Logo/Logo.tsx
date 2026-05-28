@@ -1,5 +1,5 @@
 export default function Logo({
-  src = "/Logo-Pulse-X-agency-removebg.png",
+  src = "/logo-pulse-x-management.png",
   alt = "Logo Pulse X Management",
   format = "small",
 }: {

@@ -11,7 +11,7 @@ export default function CitiesHub() {
                 <div className="w-48 h-48 rounded-full bg-pulse-pink flex items-center justify-center p-6 text-white text-center shadow-md">
                     <Image
                         /* On remplace les espaces par %20 pour forcer Next.js à lire l'image correctement */
-                        src=""
+                        src="/logo-pulse-x-management.png"
                         alt="PulseX Logo"
                         width={140}
                         height={60}
@@ -46,7 +46,7 @@ export default function CitiesHub() {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
                     <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
                         <Image
-                            src=""
+                            src="/logo-pulse-x-management.png"
                             alt="Logo Pulse X Management"
                             width={220}
                             height={100}
