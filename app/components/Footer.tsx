@@ -8,7 +8,7 @@ export default function Footer() {
                 {/* Colonne 1: Branding & Réseaux */}
                 <div className="flex flex-col gap-4">
                     <Image
-                        src="/pulse-x-logo.png"
+                        src="/Logo-Pulse-x-management.png"
                         alt="PulseX Agency Logo"
                         width={120}
                         height={40}

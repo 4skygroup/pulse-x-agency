@@ -11,7 +11,6 @@ export default function Logo({
     <img
       src={src}
       alt={alt}
-      
       className={`object-center object-cover ${format === "small" ? "w-52.5 h-18.75" : ""}`}
     />
   );

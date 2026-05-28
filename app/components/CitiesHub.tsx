@@ -11,7 +11,7 @@ export default function CitiesHub() {
                 <div className="w-48 h-48 rounded-full bg-pulse-pink flex items-center justify-center p-6 text-white text-center shadow-md">
                     <Image
                         /* On remplace les espaces par %20 pour forcer Next.js à lire l'image correctement */
-                        src="/Logo-Pulse-x-agency-bg.png"
+                        src="/Logo-Pulse-x-management.png"
                         alt="PulseX Logo"
                         width={140}
                         height={60}
