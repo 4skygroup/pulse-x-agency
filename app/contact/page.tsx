@@ -30,7 +30,7 @@ export default function Contact() {
                     {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
                     <div className="md:col-span-5 flex justify-center items-center p-4">
                         <Image
-                            src="/Logo-Pulse-X-management.png"
+                            src="/logo-pulse-x-management.png"
                             alt="Logo Pulse X Management"
                             width={350}
                             height={150}
