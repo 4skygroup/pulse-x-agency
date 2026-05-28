@@ -6,7 +6,7 @@ export default function About() {
             <div className="max-w-4xl w-full mx-auto bg-white/40 backdrop-blur-md rounded-[2.5rem] p-8 md:p-16 shadow-sm border border-white/20 mt-8">
 
                 {/* Titre principal centré */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center uppercase tracking-wide mb-12 text-white drop-shadow-sm">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl text-center uppercase tracking-wide mb-12 text-white drop-shadow-sm">
                     About us
                 </h1>
 

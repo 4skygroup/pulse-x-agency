@@ -2,13 +2,24 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
+import { policy } from "@/utils/constants/policy";
+import { services } from "@/utils/constants/service";
 
 const glacialIndifference = localFont({
   src: [
-    { path: './fonts/GlacialIndifference-Regular.otf', weight: '400', style: 'normal' },
-    { path: './fonts/GlacialIndifference-Bold.otf', weight: '700', style: 'normal' },
+    {
+      path: "../public/fonts/GlacialIndifference-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GlacialIndifference-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
   ],
+  variable: "--font-glacial",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="grow flex flex-col w-full">
           {children}
         </main>
-        <Footer />
+        <Footer policy={policy} services={services} />
       </body>
     </html>
   );

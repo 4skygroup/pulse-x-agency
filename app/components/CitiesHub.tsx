@@ -47,7 +47,7 @@ export default function CitiesHub() {
                     <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
                         <Image
                             src="/Logo-Pulse-x-agency-removebg.png"
-                            alt="PulseX Logo"
+                            alt="Logo Pulse X Management"
                             width={220}
                             height={100}
                             priority

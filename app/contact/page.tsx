@@ -13,7 +13,7 @@ export default function Contact() {
             <div className="max-w-5xl w-full mx-auto bg-white/40 backdrop-blur-md rounded-[2.5rem] p-8 md:p-14 shadow-sm border border-white/20 mt-6 relative">
 
                 {/* Titre de la page */}
-                <h1 className="text-3xl md:text-4xl font-bold text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
+                <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
                     Contact us
                 </h1>
 
@@ -27,8 +27,8 @@ export default function Contact() {
                     {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
                     <div className="md:col-span-5 flex justify-center items-center p-4">
                         <Image
-                            src="/Logo-Pulse-X-agency-bg.png"
-                            alt="Pulse X Branding"
+                            src="/Logo-Pulse-X-agency-removebg.png"
+                            alt="Logo Pulse X Management"
                             width={350}
                             height={150}
                             priority

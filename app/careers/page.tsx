@@ -5,7 +5,7 @@ export default function Careers() {
         <div className="flex-1 flex flex-col items-center justify-center min-h-[65vh] px-4 text-center bg-linear-to-b from-pulse-pink via-white to-white text-black">
 
             {/* Grand titre "Coming soon..." */}
-            <h1 className="text-5xl sm:text-7xl font-bold text-pulse-pink tracking-wide uppercase drop-shadow-sm">
+            <h1 className="text-4xl text-nowrap sm:text-7xl text-pulse-pink tracking-wide uppercase drop-shadow-sm">
                 Coming soon...
             </h1>
 

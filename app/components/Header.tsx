@@ -10,7 +10,7 @@ export default function Header() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'The Group', href: '#' },
+        { name: 'The Group', href: "https://playtosky.com/" },
         { name: 'About', href: '/about' },
         { name: 'Careers', href: '/careers' },
         { name: 'Contact', href: '/contact' },
@@ -23,7 +23,7 @@ export default function Header() {
                 <Link href="/">
                     <Image
                         src="/Logo-Pulse-x-agency-removebg.png"
-                        alt="PulseX Agency Logo"
+                        alt="Logo Pulse X Management"
                         width={80} // Réduit pour le chargement natif
                         height={28}
                         className="object-contain w-auto h-auto max-w-17.5 md:max-w-21.25 cursor-pointer"
