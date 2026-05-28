@@ -2,11 +2,19 @@ import type { LinkContent } from "@/types/LinkContent";
 
 export const services: LinkContent[] = [
   {
-    name: "Acting",
-    link: "/acting",
+    name: "Talent",
+    link: "/careers",
   },
   {
-    name: "Motion",
-    link: "/motion",
+    name: "Creators",
+    link: "/careers",
   },
+  {
+    name: "Artists",
+    link: "/careers",
+  },
+  {
+    name: "Celebrity",
+    link: "/careers"
+  }
 ];

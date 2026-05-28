@@ -26,7 +26,7 @@ export default function Footer({
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-12 border-b border-white/20">
 
           <div className="flex flex-col gap-6 items-center sm:items-start">
-            <h2 className="text-t3 font-bold uppercase tracking-wider">Politique</h2>
+            <h2 className="text-t3 font-bold uppercase tracking-wider">Politics</h2>
             <ul className="flex flex-col gap-4 items-center sm:items-start text-white/80 font-light">
               <ItemsList items={policy} />
             </ul>
@@ -40,7 +40,7 @@ export default function Footer({
           </div>
 
           <div className="flex flex-col gap-6 items-center sm:items-start">
-            <h2 className="text-t3 font-bold uppercase tracking-wider">Nos entités</h2>
+            <h2 className="text-t3 font-bold uppercase tracking-wider">Our Entities</h2>
             <ul className="flex flex-col gap-4 items-center sm:items-start text-white/80 font-light">
               <ItemsList items={entities} />
             </ul>
@@ -48,7 +48,7 @@ export default function Footer({
 
           <div className="flex flex-col gap-6 items-center sm:items-start">
             <h2 className="text-t3 font-bold uppercase tracking-wider text-center sm:text-left">
-              Nos réseaux
+              Our Socials
             </h2>
             <ul className="flex gap-6">
               <IconsList icons={media} />
@@ -59,7 +59,7 @@ export default function Footer({
 
         {/* COPYRIGHT */}
         <p className="text-t3 font-light text-white/60 text-center mt-8 tracking-widest">
-          © 2026 {entityName} - Une entité Play To Sky Group
+          © 2026 {entityName} - A Play To Sky Group Entity
         </p>
 
       </div>
