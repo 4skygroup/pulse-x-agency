@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Careers",
+    description: "Join the PulseX Management team. Explore career opportunities in talent management, digital marketing, and content strategy within the Play To Sky Group.",
+};
 
 export default function Careers() {
     return (

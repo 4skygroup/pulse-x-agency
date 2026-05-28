@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "Discover the vision behind Pulse X Management and how we build sustainable digital empires.",
+};
+
 export default function About() {
     return (
         <div className="w-full min-h-screen flex flex-col items-center px-4 py-12 md:py-20 bg-linear-to-b from-pulse-pink to-pulse-burgundy text-black">

@@ -23,8 +23,29 @@ const glacialIndifference = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'PulseX Agency | Talent & Creator Representation',
-  description: 'PulseX Agency is the talent and creator representation division of Play To Sky.',
+  title: {
+    template: "%s | PulseX Management",
+    default: "PulseX Management | Talent & Creator Representation", // Utilisé sur la Home
+  },
+  description: "PulseX Management is the talent and creator representation division of Play To Sky.",
+
+  // 2. OPEN GRAPH (Réseaux Sociaux & iMessage/WhatsApp)
+  openGraph: {
+    title: "PulseX Management | Talent & Creator",
+    description: "PulseX Management is the talent and creator representation division of Play To Sky.",
+    url: "https://pulse-x-agency.vercel.app", // à Changer en cas de déploiement
+    siteName: "PulseX Agency",
+    images: [
+      {
+        url: "/logo-pulse-x-management.png", // Ton logo qui fonctionne enfin !
+        width: 1200, // Format idéal pour les cartes LinkedIn/Twitter
+        height: 630,
+        alt: "PulseX Management Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
