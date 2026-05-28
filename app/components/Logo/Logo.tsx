@@ -1,6 +1,6 @@
 export default function Logo({
   src = "/Logo-Pulse-X-agency-removebg.png",
-  alt = "Snackly logo",
+  alt = "Logo Pulse X Management",
   format = "small",
 }: {
   src?: string;
@@ -11,6 +11,7 @@ export default function Logo({
     <img
       src={src}
       alt={alt}
+      
       className={`object-center object-cover ${format === "small" ? "w-52.5 h-18.75" : ""}`}
     />
   );

@@ -26,6 +26,7 @@ export default function Header() {
                         alt="Logo Pulse X Management"
                         width={80} // Réduit pour le chargement natif
                         height={28}
+                        unoptimized
                         className="object-contain w-auto h-auto max-w-17.5 md:max-w-21.25 cursor-pointer"
                     />
                 </Link>
