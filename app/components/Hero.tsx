@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="w-full min-h-[calc(100vh-140px)] flex flex-col justify-between items-center text-center px-4 relative z-10 bg-linear-to-b from-pulse-pink to-white">
+        <section className="border-t-2 border-white/40 w-full min-h-[calc(100vh-140px)] flex flex-col justify-between items-center text-center px-4 relative z-10 bg-linear-to-b from-pulse-pink to-white">
 
             {/* Espace invisible pour équilibrer */}
             <div className="flex-1"></div>

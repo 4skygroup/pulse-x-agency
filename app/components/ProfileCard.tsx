@@ -5,7 +5,7 @@ export default function ProfilesCard() {
 
     return (
         /* SECTION 3 : 4 CARDS PROFILS with Link cards (retaining previous logic) */
-        <section className = "w-full bg-linear-to-b from-white via-pulse-mid to-pulse-burgundy py-24 px-4" >
+        <section className = "w-full bg-linear-to-b from-white via-pulse-mid to-pulse-burgundy py-24 px-4 border-b border-white" >
             <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {profiles.map((profile) => (
                     <Link

@@ -12,11 +12,11 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="lastname">Nom</label>
-                    <input type="text" id="lastname" placeholder="Dupond" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="text" id="lastname" placeholder="Dupond" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="firstname">Prénom</label>
-                    <input type="text" id="firstname" placeholder="Arnold" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="text" id="firstname" placeholder="Arnold" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
             </div>
 
@@ -24,11 +24,11 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="email">Adresse Email</label>
-                    <input type="email" id="email" placeholder="Arnodupond@Gmail.Com" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="email" id="email" placeholder="Arnodupond@Gmail.Com" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="company">Nom De L&apos;entreprise</label>
-                    <input type="text" id="company" placeholder="SNCF Connect" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="text" id="company" placeholder="SNCF Connect" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="phone">Numéro De Téléphone</label>
-                    <input type="tel" id="phone" placeholder="06 12 34 56 78" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="tel" id="phone" placeholder="06 12 34 56 78" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="subject">Sujet</label>
@@ -45,7 +45,7 @@ export default function ContactForm() {
                             id="subject"
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
-                            className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black appearance-none focus:outline-none focus:border-white text-sm"
+                            className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black appearance-none focus:outline-none focus:border-white text-sm"
                         >
                             <option value="" disabled className="text-black/50">Dupond</option>
                             <option value="representation" className="text-black">Talent Representation</option>
@@ -62,7 +62,7 @@ export default function ContactForm() {
             {/* Ligne 4 : Message */}
             <div className="flex flex-col gap-1.5">
                 <label htmlFor="message">Votre Message</label>
-                <textarea id="message" rows={4} placeholder="Message" className="w-full bg-white/20 border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm resize-none"></textarea>
+                <textarea id="message" rows={4} placeholder="Message" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm resize-none"></textarea>
             </div>
 
             {/* Bouton d'envoi aligné à droite */}

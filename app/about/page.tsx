@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <div className="w-full min-h-screen flex flex-col items-center px-4 py-12 md:py-20 bg-linear-to-b from-pulse-pink to-pulse-burgundy text-black">
+        <div className="w-full min-h-screen border-t border-b border-white flex flex-col items-center px-4 py-12 md:py-20 bg-linear-to-b from-pulse-pink to-pulse-burgundy text-black">
 
             {/* Grand conteneur de la maquette avec effet de transparence et coins très arrondis */}
             <div className="max-w-4xl w-full mx-auto bg-white/40 backdrop-blur-md rounded-[2.5rem] p-8 md:p-16 shadow-sm border border-white/20 mt-8">

@@ -8,10 +8,9 @@ export const metadata: Metadata = {
 
 export default function Careers() {
     return (
-        <div className="flex-1 flex flex-col items-center justify-center min-h-[65vh] px-4 text-center bg-linear-to-b from-pulse-pink via-white to-white text-black">
-
-            {/* Grand titre "Coming soon..." */}
-            <h1 className="text-4xl text-nowrap sm:text-7xl text-pulse-pink tracking-wide uppercase drop-shadow-sm">
+        <div className="w-full min-h-[calc(160vh-100px)] border-t border-b border-white flex flex-col items-center justify-center bg-[linear-gradient(to_bottom,var(--tw-gradient-from),white_40%,white_72%,var(--tw-gradient-to))] from-pulse-pink to-pulse-pink">
+            {/* 2. Le texte ultra-clean (sans ombre, juste la couleur de la maquette) */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-pulse-pink">
                 Coming soon...
             </h1>
 

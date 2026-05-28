@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function Contact() {
 
     return (
-        <div className="w-full min-h-screen flex flex-col items-center px-4 py-12 md:py-20 bg-linear-to-b from-pulse-pink to-pulse-mid text-black">
+        <div className="w-full min-h-[calc(100vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-20 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
 
             {/* Cadre principal arrondi de la maquette */}
-            <div className="max-w-5xl w-full mx-auto bg-white/40 backdrop-blur-md rounded-[2.5rem] p-8 md:p-14 shadow-sm border border-white/20 mt-6 relative">
+            <div className="max-w-5xl w-full mx-auto bg-white/40 backdrop-blur-md p-8 md:p-14 shadow-sm border border-white mt-6 relative">
 
                 {/* Titre de la page */}
                 <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
@@ -40,7 +40,7 @@ export default function Contact() {
                     </div>
 
                     {/* CÔTÉ DROIT : Le Formulaire complet */}
-                    <ContactForm/>
+                    <ContactForm />
 
                 </div>
             </div>
