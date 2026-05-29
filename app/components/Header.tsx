@@ -66,7 +66,7 @@ export default function Header() {
                     ))}
                 </nav>
 
-                <div className="absolute bottom-12 text-white/60 text-[10px] uppercase tracking-widest">
+                <div className="absolute bottom-12 text-white/60 text-[10px] tracking-widest">
                     A Play To Sky Group Entity
                 </div>
             </div>
