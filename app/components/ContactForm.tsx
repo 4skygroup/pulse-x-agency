@@ -6,7 +6,7 @@ export default function ContactForm() {
     const [subject, setSubject] = useState("");
     
     return (
-        <form className="md:col-span-7 flex flex-col gap-5 text-xs font-medium text-white/90">
+        <form className="md:col-span-7 flex flex-col gap-5 text-xs font-medium text-white/90 ">
 
             {/* Ligne 1 : Nom & Prénom */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -24,7 +24,7 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="email">Adresse Email</label>
-                    <input type="email" id="email" placeholder="Arnodupond@Gmail.Com" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
+                    <input type="email" id="email" placeholder="a.dupond@gmail.com" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="company">Nom De L&apos;entreprise</label>
@@ -45,15 +45,15 @@ export default function ContactForm() {
                             id="subject"
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
-                            className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black appearance-none focus:outline-none focus:border-white text-sm"
+                            className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-white/90 appearance-none focus:outline-none focus:border-white text-sm"
                         >
-                            <option value="" disabled className="text-black/50">Dupond</option>
+                            <option value="" disabled className="text-black/50">Sélectionnez un sujet</option>
                             <option value="representation" className="text-black">Talent Representation</option>
                             <option value="partnership" className="text-black">Brand Partnership</option>
                             <option value="other" className="text-black">Other Inquiry</option>
                         </select>
-                        <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-black/60">
-                            ▼
+                        <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none font-bold text-grey/10">
+                            ﹀
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ export default function ContactForm() {
                 <textarea id="message" rows={4} placeholder="Message" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm resize-none"></textarea>
             </div>
 
-            {/* Bouton d'envoi aligné à droite */}
-            <div className="flex justify-end mt-4">
-                <button type="submit" className="bg-white text-pulse-burgundy font-bold uppercase tracking-wider px-10 py-3 rounded-lg shadow-md hover:bg-pulse-pink hover:text-white transition-all duration-300 text-sm">
-                    Send
+            {/* Bouton d'envoi aligné au centre */}
+            <div className="flex justify-center mt-4">
+                <button type="submit" className="bg-white text-pulse-burgundy font-regular tracking-wider px-10 py-3 rounded-lg shadow-md hover:bg-pulse-pink hover:text-white transition-all duration-300 text-sm">
+                    Envoyer
                 </button>
             </div>
 

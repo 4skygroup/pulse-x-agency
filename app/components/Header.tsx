@@ -59,7 +59,7 @@ export default function Header() {
                             key={link.name}
                             href={link.href}
                             onClick={toggleMenu}
-                            className="text-3xl font-bold text-white tracking-widest hover:scale-110 transition-transform"
+                            className="text-3xl font-regular text-white tracking-widest hover:scale-110 transition-transform"
                         >
                             {link.name}
                         </Link>

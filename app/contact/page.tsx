@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="w-full min-h-[calc(100vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-20 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
 
             {/* Cadre principal arrondi de la maquette */}
-            <div className="max-w-5xl w-full mx-auto bg-white/40 backdrop-blur-md p-8 md:p-14 shadow-sm border border-white mt-6 relative">
+            <div className="max-w-5xl w-full mx-auto bg-white/10 backdrop-blur-md p-8 md:p-14 shadow-sm border border-white mt-6 relative">
 
                 {/* Titre de la page */}
                 <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">

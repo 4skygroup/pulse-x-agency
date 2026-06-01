@@ -11,7 +11,7 @@ export default function Footer({
   entities = entityList,
   media = mediaList,
   entityName = "Pulse X Management",
-  color = "bg-linear-to-b from-pulse-pink to-pulse-burgundy",
+  color = "bg-linear-to-b from-pulse-footer to-pulse-burgundy",
 }: FooterProp) {
   return (
     <footer className={`w-full text-white pt-16 pb-8 px-6 ${color}`}>
