@@ -10,17 +10,17 @@ export const metadata: Metadata = {
 export default function Contact() {
 
     return (
-        <div className="w-full min-h-[calc(100vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-20 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
+        <div className="w-full min-h-[calc(90vh-100px)] bg-linear-to-b from-pulse-pink via-pulse-pink/90 to-pulse-pink/40 py-3 px-4 md:px-8 flex items-center justify-center border-t border-b border-white">
 
             {/* Cadre principal arrondi de la maquette */}
-            <div className="max-w-5xl w-full mx-auto bg-white/10 backdrop-blur-md p-8 md:p-14 shadow-sm border border-white mt-6 relative">
+            <div className="max-w-6xl w-full mx-auto bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm border border-white mt-6 relative">
 
                 {/* Titre de la page */}
-                <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
+                {/* <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
                     Contact us
-                </h1>
+                </h1> */}
 
-                <p className="text-center text-white font-medium tracking-wide text-lg md:text-xl mb-12">
+                <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
                     Let&apos;s start your strategy !
                 </p>
 

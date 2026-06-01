@@ -59,7 +59,7 @@ export default function Footer({
 
         {/* COPYRIGHT */}
         <p className="text-t3 font-light text-white/60 text-center mt-8 tracking-widest">
-          © 2026 {entityName} - A Play To Sky Group Entity
+          {entityName} - create by 
         </p>
 
       </div>

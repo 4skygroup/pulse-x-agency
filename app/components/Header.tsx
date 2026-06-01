@@ -10,7 +10,7 @@ export default function Header() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: 'The Group', href: "https://playtosky.com/" },
+        { name: 'The Group', href: "https://www.playtosky.com/" },
         { name: 'About', href: '/about' },
         { name: 'Careers', href: '/careers' },
         { name: 'Contact', href: '/contact' },
@@ -35,9 +35,25 @@ export default function Header() {
             {/* NAVIGATION DESKTOP */}
             <nav className="hidden md:flex gap-8 text-xs tracking-wider">
                 {navLinks.map((link) => (
-                    <Link key={link.name} href={link.href} className="text-white hover:text-black transition-colors">
-                        {link.name}
-                    </Link>
+                    link.href.startsWith('http') ? (
+                        <a
+                            key={link.name}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-black transition-colors"
+                        >
+                            {link.name}
+                        </a>
+                    ) : (
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className="text-white hover:text-black transition-colors"
+                        >
+                            {link.name}
+                        </Link>
+                    )
                 ))}
             </nav>
 
@@ -55,14 +71,27 @@ export default function Header() {
             <div className={`fixed inset-0 bg-pulse-pink z-105 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <nav className="flex flex-col gap-10 text-center">
                     {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            onClick={toggleMenu}
-                            className="text-3xl font-regular text-white tracking-widest hover:scale-110 transition-transform"
-                        >
-                            {link.name}
-                        </Link>
+                        link.href.startsWith('http') ? (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={toggleMenu}
+                                className="text-3xl font-regular text-white tracking-widest hover:scale-110 transition-transform"
+                            >
+                                {link.name}
+                            </a>
+                        ) : (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                onClick={toggleMenu}
+                                className="text-3xl font-regular text-white tracking-widest hover:scale-110 transition-transform"
+                            >
+                                {link.name}
+                            </Link>
+                        )
                     ))}
                 </nav>
 
