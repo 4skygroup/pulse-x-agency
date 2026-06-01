@@ -59,9 +59,17 @@ export default function Footer({
 
         {/* COPYRIGHT */}
         <p className="text-t3 font-light text-white/60 text-center mt-8 tracking-widest">
-          {entityName} - create by 
+          {entityName} - create by
+          <img
+            src="/visuance.png"
+            alt="Visuance logo"
+            className="inline-block h-4 ml-2"
+          /> &<img
+            src="/play-to-sky.png"
+            alt="Play To Sky logo"
+            className="inline-block h-6 ml-2"
+          />
         </p>
-
       </div>
     </footer>
   );

@@ -9,13 +9,12 @@ export default function CitiesHub() {
             {/* DISPOSITION MOBILE */}
             <div className="flex flex-col items-center gap-8 md:hidden w-full max-w-sm mx-auto relative z-10">
                 <div className="w-48 h-48 rounded-full bg-pulse-pink flex items-center justify-center p-6 text-white text-center shadow-md">
-                    <Image
+                    <img
                         /* On remplace les espaces par %20 pour forcer Next.js à lire l'image correctement */
                         src="/logo-pulse-x-management.png"
                         alt="PulseX Logo"
                         width={140}
                         height={60}
-                        priority
                         className="w-auto h-auto object-contain"
                     />
                 </div>
@@ -45,12 +44,11 @@ export default function CitiesHub() {
                 {/* 2. Logo flottant au centre */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
                     <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
-                        <Image
+                        <img
                             src="/logo-pulse-x-management.png"
                             alt="Logo Pulse X Management"
                             width={220}
                             height={100}
-                            priority
                             className="w-auto h-auto object-contain"
                         />
                     </div>
