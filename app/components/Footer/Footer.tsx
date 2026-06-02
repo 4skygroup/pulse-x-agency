@@ -10,7 +10,6 @@ export default function Footer({
   services,
   entities = entityList,
   media = mediaList,
-  entityName = "Pulse X Management",
   color = "bg-linear-to-b from-pulse-footer to-pulse-burgundy",
 }: FooterProp) {
   return (
@@ -59,7 +58,7 @@ export default function Footer({
 
         {/* COPYRIGHT */}
         <p className="text-t3 font-light text-white/60 text-center mt-8 tracking-widest">
-          {entityName} - create by
+          create by
           <img
             src="/visuance.png"
             alt="Visuance logo"
