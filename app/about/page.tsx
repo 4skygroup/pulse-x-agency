@@ -3,11 +3,42 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "About Us",
     description: "Discover the vision behind Pulse X Management and how we build sustainable digital empires.",
+    alternates: {
+        canonical: "/about",
+    },
+    openGraph: {
+        title: "About Us | PulseX Management",
+        description: "Discover the vision behind Pulse X Management and how we build sustainable digital empires.",
+        url: "/about",
+    },
+    twitter: {
+        title: "About Us | PulseX Management",
+        description: "Discover the vision behind Pulse X Management and how we build sustainable digital empires.",
+    },
+};
+
+const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About PulseX Management",
+    description: "Discover the vision behind Pulse X Management and how we build sustainable digital empires.",
+    url: "https://pulsexmanagement.com/about",
+    breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://pulsexmanagement.com" },
+            { "@type": "ListItem", position: 2, name: "About Us", item: "https://pulsexmanagement.com/about" },
+        ],
+    },
 };
 
 export default function About() {
     return (
         <div className="w-full min-h-screen border-t border-b border-white flex flex-col items-center px-4 py-12 md:py-10 bg-linear-to-b from-pulse-pink to-pulse-pink text-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+            />
 
             {/* Grand conteneur de la maquette avec effet de transparence et coins très arrondis */}
             <div className="max-w-4xl w-full mx-auto bg-white/40 backdrop-blur-md rounded-[2.5rem] p-4 md:p-8 bg-linear-to-b from-pulse-mid to-pulse-light shadow-sm border border-white/20 mt-8">

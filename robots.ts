@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/", // Bloque l'indexation de tes potentielles routes d'API
     },
-    sitemap: "https://pulse-x-agency.vercel.app/sitemap.xml",
+    sitemap: "https://pulsexmanagement.com/sitemap.xml",
   };
 }

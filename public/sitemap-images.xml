@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://pulsexmanagement.com/</loc>
+    <image:image>
+      <image:loc>https://pulsexmanagement.com/logo-pulse-x-management.png</image:loc>
+      <image:title>PulseX Management Logo</image:title>
+      <image:caption>PulseX Management – Talent &amp; Creator Representation Agency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pulsexmanagement.com/play-to-sky.png</image:loc>
+      <image:title>Play To Sky Group</image:title>
+      <image:caption>Play To Sky – Parent Group of PulseX Management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pulsexmanagement.com/visuance.png</image:loc>
+      <image:title>Visuance</image:title>
+      <image:caption>Visuance – Partner Brand of PulseX Management</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://pulsexmanagement.com/contact</loc>
+    <image:image>
+      <image:loc>https://pulsexmanagement.com/logo-pulse-x-management.png</image:loc>
+      <image:title>PulseX Management Logo – Contact Page</image:title>
+      <image:caption>Contact PulseX Management – Talent &amp; Creator Agency</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://pulsexmanagement.com/about</loc>
+    <image:image>
+      <image:loc>https://pulsexmanagement.com/logo-pulse-x-management.png</image:loc>
+      <image:title>PulseX Management – About Us</image:title>
+      <image:caption>About PulseX Management – Talent &amp; Creator Representation Division of Play To Sky</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
