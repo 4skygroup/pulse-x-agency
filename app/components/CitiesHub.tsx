@@ -34,7 +34,7 @@ export default function CitiesHub() {
                 <div className="flex flex-col gap-5 z-10 w-2/5 text-left">
                     {cities.map((city) => (
                         <div key={city} className="group cursor-pointer">
-                            <h2 className="text-3xl lg:text-[3rem] tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink leading-none">
+                            <h2 className="text-4xl lg:text-[4rem] tracking-wide uppercase transition-colors duration-300 group-hover:text-pulse-pink leading-none">
                                 {city}
                             </h2>
                         </div>
@@ -57,7 +57,7 @@ export default function CitiesHub() {
                 {/* 3. Villes miroirs à droite */}
                 <div className="flex flex-col gap-5 z-10 w-2/5 text-right">
                     {cities.map((city) => (
-                        <h2 key={`${city}-mirror`} className="text-3xl lg:text-[3rem] tracking-wide uppercase text-gray-200/60 select-none leading-none">
+                        <h2 key={`${city}-mirror`} className="text-4xl lg:text-[4rem] tracking-wide uppercase text-gray-200/60 select-none leading-none">
                             {city}
                         </h2>
                     ))}
