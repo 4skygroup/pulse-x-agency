@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/logo-pulse-x-management.png", type: "image/png" },
     ],
     apple: [
       { url: "/logo-pulse-x-management.png", sizes: "180x180", type: "image/png" },
