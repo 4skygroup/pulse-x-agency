@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
       { url: "/logo-pulse-x-management.png", type: "image/png" },
