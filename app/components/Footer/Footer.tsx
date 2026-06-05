@@ -4,6 +4,7 @@ import { mediaList } from "@/utils/constants/media";
 import Logo from "../Logo/Logo";
 import IconsList from "./IconsList";
 import ItemsList from "./ItemsList";
+import Image from "next/image";
 
 export default function Footer({
   policy,
@@ -57,18 +58,12 @@ export default function Footer({
         </div>
 
         {/* COPYRIGHT */}
-        <p className="text-t3 font-light text-white/60 text-center mt-8 tracking-widest">
-          create by
-          <img
-            src="/visuance.png"
-            alt="Visuance logo"
-            className="inline-block h-4 ml-2"
-          /> &<img
-            src="/play-to-sky.png"
-            alt="Play To Sky logo"
-            className="inline-block h-6 ml-2"
-          />
-        </p>
+        <div className="flex flex-wrap justify-center items-center gap-3 text-t3 font-light text-white/60 mt-8 tracking-widest">
+          <span>created by</span>
+          <Image src="/visuance.png" alt="Visuance" width={100} height={24} className="h-5 w-auto object-contain" />
+          <span>&</span>
+          <Image src="/play-to-sky.png" alt="Play to Sky" width={100} height={24} className="h-5 w-auto object-contain" />
+        </div>
       </div>
     </footer>
   );
