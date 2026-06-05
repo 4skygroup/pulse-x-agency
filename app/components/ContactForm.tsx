@@ -8,7 +8,6 @@ export default function ContactForm() {
     return (
         <form className="md:col-span-7 flex flex-col gap-5 text-xs font-medium text-white/90 ">
 
-            {/* Ligne 1 : Nom & Prénom */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="lastname">Nom</label>
@@ -20,7 +19,6 @@ export default function ContactForm() {
                 </div>
             </div>
 
-            {/* Ligne 2 : Email & Nom de l'entreprise */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="email">Adresse Email</label>
@@ -32,7 +30,6 @@ export default function ContactForm() {
                 </div>
             </div>
 
-            {/* Ligne 3 : Téléphone & Sujet */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="phone">Numéro De Téléphone</label>
@@ -59,13 +56,11 @@ export default function ContactForm() {
                 </div>
             </div>
 
-            {/* Ligne 4 : Message */}
             <div className="flex flex-col gap-1.5">
                 <label htmlFor="message">Votre Message</label>
                 <textarea id="message" rows={4} placeholder="Message" className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-black placeholder-black/30 focus:outline-none focus:border-white text-sm resize-none"></textarea>
             </div>
 
-            {/* Bouton d'envoi aligné au centre */}
             <div className="flex justify-center mt-4">
                 <button type="submit" className="bg-white text-pulse-burgundy font-regular tracking-wider px-10 py-3 rounded-lg shadow-md hover:bg-pulse-pink hover:text-white transition-all duration-300 text-sm">
                     Envoyer

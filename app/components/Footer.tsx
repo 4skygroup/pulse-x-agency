@@ -26,14 +26,14 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Colonne 2: Policy */}
+                {/* Policy */}
                 <div className="flex flex-col gap-3">
                     <h3 className="font-bold text-base mb-1">Politique</h3>
                     <Link href="#" className="hover:underline text-white/80">Mentions légales</Link>
                     <Link href="#" className="hover:underline text-white/80">Confidentialité</Link>
                 </div>
 
-                {/* Colonne 3: Our Entities */}
+                {/* Nos entités */}
                 <div className="flex flex-col gap-2">
                     <h3 className="font-bold text-base mb-1">Nos entités</h3>
                     {['Visuance', 'Snackly', 'Seofy', 'Pulse X', 'CyberSky', 'Drox 360', 'Sky To Be Media', 'Play to sky production'].map((entity) => (
@@ -43,7 +43,7 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* Colonne 4: Services */}
+                {/* Services */}
                 <div className="flex flex-col gap-3">
                     <h3 className="font-bold text-base mb-1">Services</h3>
                     <Link href="#" className="hover:underline text-white/80">Social Ads</Link>

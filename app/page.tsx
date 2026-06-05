@@ -11,10 +11,8 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col items-center">
 
-      {/* 2. Le Hero se charge instantanément avec la page (zéro délai pour le LCP) */}
       <Hero />
 
-      {/* 3. Next.js va télécharger le code de ces composants uniquement quand le navigateur aura fini d'afficher le Hero */}
       <CitiesHub />
 
       <ProfileCard />
