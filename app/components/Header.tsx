@@ -22,7 +22,7 @@ export default function Header() {
             <div className="shrink-0">
                 <Link href="/">
                     <Image
-                        src="https://pulsexmanagement.com/logo-pulse-x-management.png"
+                        src="/logo-pulse-x-management.webp"
                         alt="Logo Pulse X Management"
                         width={80}
                         height={28}
