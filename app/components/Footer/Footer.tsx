@@ -59,9 +59,9 @@ export default function Footer({
         {/* COPYRIGHT */}
         <div className="flex flex-wrap justify-center items-center gap-3 text-t3 font-light text-white/60 mt-8 tracking-widest">
           <span>created by</span>
-          <Image src="/visuance.png" alt="Visuance" width={100} height={24} className="h-5 w-auto object-contain" />
+          <Image src="/visuance.webp" alt="Visuance" width={100} height={24} className="h-5 w-auto object-contain" />
           <span>&</span>
-          <Image src="/play-to-sky.png" alt="Play to Sky" width={100} height={24} className="h-5 w-auto object-contain" />
+          <Image src="/play-to-sky.webp" alt="Play to Sky" width={100} height={24} className="h-5 w-auto object-contain" />
         </div>
       </div>
     </footer>

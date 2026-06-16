@@ -18,7 +18,7 @@ export default function Header() {
 
     return (
         <header className="flex justify-between items-center px-6 md:px-12 py-2 w-full mx-auto relative z-100">
-            {/* LOGO ENVELOPPÉ DANS UN LINK */}
+            {/* LOGO ENVELOPPÉ DANS UN LINK + Lien de Localisation */}
             <div className="shrink-0">
                 <Link href="/">
                     <Image
@@ -30,6 +30,7 @@ export default function Header() {
                         className="object-contain w-auto h-auto max-w-17.5 md:max-w-21.25 cursor-pointer"
                     />
                 </Link>
+                <Link href=""/>
             </div>
 
             {/* NAVIGATION DESKTOP */}
