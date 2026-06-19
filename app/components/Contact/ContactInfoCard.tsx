@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const cards = [
     {
-        icon: <Mail className="w-5 h-5 text-black" />,
+        icon: <Mail className="w-5 h-5 text-white" />,
         label: "Email",
         value: "contact@playtosky.com",
     },
     {
-        icon: <Phone className="w-5 h-5 text-black" />,
+        icon: <Phone className="w-5 h-5 text-white" />,
         label: "Phone",
         value: "+33 1 23 45 67 89",
     },
     {
-        icon: <Clock className="w-5 h-5 text-black" />,
+        icon: <Clock className="w-5 h-5 text-white" />,
         label: "Business Hours",
         value: "Mon–Fri · 09:30 AM–07:00 PM",
     },
@@ -27,14 +27,14 @@ export default function ContactInfoCards() {
                     key={card.label}
                     className="flex items-center gap-4 rounded-xl border border-black/10 bg-black/5 px-5 py-4"
                 >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black/10">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10">
                         {card.icon}
                     </div>
                     <div>
-                        <p className="text-t6 font-medium uppercase tracking-widest text-black/40">
+                        <p className="text-t6 font-medium uppercase tracking-widest text-white/40">
                             {card.label}
                         </p>
-                        <p className="mt-0.5 text-t5 font-medium text-black">{card.value}</p>
+                        <p className="mt-0.5 text-t5 font-medium text-white">{card.value}</p>
                     </div>
                 </div>
             ))}
@@ -49,7 +49,7 @@ export default function ContactInfoCards() {
                     className="h-8 w-auto object-contain"
                     style={{ filter: "brightness(0) invert(1)" }}
                 />
-                <p className="text-t6 md:text-t5 leading-relaxed text-black/40">
+                <p className="text-t6 md:text-t5 leading-relaxed text-white/40">
                     Empowering creators and brands to reach new heights through strategic management.
                 </p>
             </div>

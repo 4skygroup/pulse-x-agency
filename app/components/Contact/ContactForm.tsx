@@ -65,6 +65,7 @@ function CallbackForm() {
     const [lastName, setLastName] = useState("");
     const [firstName, setFirstName] = useState("");
     const [phone, setPhone] = useState("");
+    const [jour, setJour] = useState("");
     const [subject, setSubject] = useState("");
     const [timeSlot, setTimeSlot] = useState("");
     const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -100,6 +101,15 @@ function CallbackForm() {
             <Field label="Phone Number" placeholder="+1 234 567 8900" type="tel" value={phone} onChange={setPhone} />
             <SelectField label="Subject" options={subjects} value={subject} onChange={setSubject} />
             <SelectField label="Preferred Time" options={timeSlots} value={timeSlot} onChange={setTimeSlot} />
+
+            <Field
+                label="Preferred Day"
+                placeholder="JJ/MM/AAAA"
+                type="date"
+                value={jour}
+                onChange={setJour}
+                className="scheme-dark"
+            />
 
             {status === "sent" && (
                 <p className="text-sm text-green-400 text-center">Request sent successfully!</p>
@@ -191,12 +201,13 @@ function MessageForm() {
     );
 }
 
-function Field({ label, placeholder, type = "text", value, onChange, }: {
+function Field({ label, placeholder, type = "text", value, onChange, className = "" }: {
     label: string;
     placeholder: string;
     type?: string;
     value: string;
     onChange: (v: string) => void;
+    className?: string;
 }) {
     return (
         <div className="flex flex-col gap-1.5">
@@ -208,8 +219,7 @@ function Field({ label, placeholder, type = "text", value, onChange, }: {
                 placeholder={placeholder}
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
-                className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8"
-            />
+                className={`w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-t5 text-white placeholder:text-white/25 outline-none transition focus:border-white/30 focus:bg-white/8 ${className}`}            />
         </div>
     );
 }

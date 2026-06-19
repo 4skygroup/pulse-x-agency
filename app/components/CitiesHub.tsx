@@ -10,7 +10,7 @@ export default function CitiesHub() {
             <div className="flex flex-col items-center gap-8 md:hidden w-full max-w-sm mx-auto relative z-10">
                 <div className="w-48 h-48 rounded-full bg-pulse-pink flex items-center justify-center p-6 text-white text-center shadow-md">
                     <Image
-                        src="https://pulsexmanagement.com/logo-pulse-x-management.png"
+                        src="/logo-pulse-x-management.webp"
                         alt="PulseX Logo"
                         width={140}
                         height={60}
@@ -45,7 +45,7 @@ export default function CitiesHub() {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
                     <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-pulse-pink flex items-center justify-center p-8 text-white shadow-lg">
                         <Image
-                            src="https://pulsexmanagement.com/logo-pulse-x-management.png"
+                            src="/logo-pulse-x-management.webp"
                             alt="Logo Pulse X Management"
                             width={220}
                             height={100}
