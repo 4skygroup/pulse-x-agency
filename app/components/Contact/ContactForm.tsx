@@ -2,7 +2,7 @@
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
-const FORMSPREE = ""; // Your Formspree URL goes here
+const FORMSPREE = "https://formspree.io/f/xdargelv";
 
 type Tab = "callback" | "message";
 

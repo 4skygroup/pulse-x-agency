@@ -5,12 +5,12 @@ const cards = [
   {
     icon: <Mail className="w-5 h-5 text-white" />,
     label: "Email",
-    value: "contact@playtosky.com",
+    value: "contact@pulsexmanagement.com",
   },
   {
     icon: <Phone className="w-5 h-5 text-white" />,
     label: "Phone",
-    value: "+33 1 23 45 67 89",
+    value: "+33 1 30 29 30 25",
   },
   {
     icon: <Clock className="w-5 h-5 text-white" />,
