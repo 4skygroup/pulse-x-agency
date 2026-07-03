@@ -47,7 +47,6 @@ export default function ContactInfoCards() {
           alt="Pulse X Management Logo"
           width={80}
           height={28}
-          unoptimized
           className="h-8 w-auto object-contain"
           style={{ filter: "brightness(0) invert(1)" }}
         />
