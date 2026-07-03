@@ -3,15 +3,15 @@ import type { LinkContent } from "../../types/LinkContent";
 export const mediaList: LinkContent[] = [
   {
     name: "/icons/LinkedIn.svg",
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/company/pulsexmanagement",
   },
   {
     name: "/icons/Instagram.svg",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/pulsexmanagement/",
   },
   {
     name: "/icons/Tiktok.svg",
-    link: "https://tiktok.com",
+    link: "https://www.tiktok.com/@pulsexmanagement",
   },
   {
     name: "/icons/Behance.svg",
