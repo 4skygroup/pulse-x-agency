@@ -5,7 +5,7 @@ export default function ItemsList({ items }: { items: LinkContent[] }) {
     <>
       {items.map((link, index) => (
         <li key={index} className="text-white text-t3">
-          <a href={link.link}>{link.name}</a>
+          <a href={link.link} target="_blank">{link.name}</a>
         </li>
       ))}
     </>
