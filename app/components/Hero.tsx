@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
 
             {/* Flèche d'indication de scroll */}
-            <div className="flex-1 flex flex-col justify-end pb-12 items-center gap-1 text-pulse-pink/60 text-[10px] tracking-widest uppercase font-light">
+            <div className="flex-1 flex flex-col justify-end pb-12 items-center gap-1 text-pulse-pink/60 text-xs tracking-widest uppercase font-light">
                 <span>Select a city</span>
                 <span className="animate-bounce text-xs mt-1">↓</span>
             </div>

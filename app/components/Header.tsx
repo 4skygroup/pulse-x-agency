@@ -124,7 +124,7 @@ export default function Header() {
             <MapPin className="w-8 h-8" /> Locations
           </Link>
         </nav>
-        <div className="absolute bottom-12 text-white/60 text-[10px] tracking-widest uppercase">
+        <div className="absolute bottom-12 text-white/60 text-xs tracking-widest uppercase">
           A Play To Sky Group Entity
         </div>
       </div>
