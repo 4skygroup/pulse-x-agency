@@ -9,9 +9,9 @@ export default function Contact() {
                 {/* ── Left column ── */}
                 <div className="flex flex-col gap-10">
                     <div>
-                        <h2 className="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
+                        <h1 className="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
                             Let&apos;s elevate your brand!
-                        </h2>
+                        </h1>
                         <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
                             Whether you are a talent looking for representation or a brand seeking impactful partnerships, our team is ready to help. Contact us using the method that works best for you.
                         </p>

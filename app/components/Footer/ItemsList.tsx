@@ -5,7 +5,14 @@ export default function ItemsList({ items }: { items: LinkContent[] }) {
     <>
       {items.map((link, index) => (
         <li key={index} className="text-white text-t3">
-          <a href={link.link} target="_blank">{link.name}</a>
+          {/* Lien interne : meme onglet ; lien externe : nouvel onglet */}
+          <a
+            href={link.link}
+            className="inline-block py-2 sm:py-0"
+            {...(/^https?:\/\//.test(link.link) ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {link.name}
+          </a>
         </li>
       ))}
     </>

@@ -26,7 +26,7 @@ export default function Footer({
             <h2 className="text-t3 font-bold uppercase tracking-wider">
               Politics
             </h2>
-            <ul className="flex flex-col gap-4 items-center sm:items-start text-white/80 font-light">
+            <ul className="flex flex-col sm:gap-4 items-center sm:items-start text-white/80 font-light">
               <ItemsList items={policy} />
             </ul>
           </div>
@@ -35,7 +35,7 @@ export default function Footer({
             <h2 className="text-t3 font-bold uppercase tracking-wider">
               Services
             </h2>
-            <ul className="flex flex-col gap-4 items-center sm:items-start text-white/80 font-light">
+            <ul className="flex flex-col sm:gap-4 items-center sm:items-start text-white/80 font-light">
               <ItemsList items={services} />
             </ul>
           </div>
@@ -44,7 +44,7 @@ export default function Footer({
             <h2 className="text-t3 font-bold uppercase tracking-wider">
               Our Entities
             </h2>
-            <ul className="flex flex-col gap-4 items-center sm:items-start text-white/80 font-light">
+            <ul className="flex flex-col sm:gap-4 items-center sm:items-start text-white/80 font-light">
               <ItemsList items={entities} />
             </ul>
           </div>
