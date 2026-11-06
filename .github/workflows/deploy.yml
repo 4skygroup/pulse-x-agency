@@ -54,7 +54,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             DOMAIN="pulsexmanagement.com"
-            if [ ! -d /etc/letsencrypt/live/$DOMAIN ]; then
+            # sudo obligatoire : /etc/letsencrypt/live n\'est lisible qu\'en root.
+            # Sans sudo, le test croit le certificat absent et reecrit la config a chaque deploiement.
+            if ! sudo test -d /etc/letsencrypt/live/$DOMAIN; then
               sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
             server {
                 server_name pulsexmanagement.com www.pulsexmanagement.com;
